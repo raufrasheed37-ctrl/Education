@@ -350,6 +350,38 @@ nav a.active, nav a:hover {
 }
 
 
+/* Contact */
+.contact {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.contact button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #0d6efd;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+ 
+
 
 /* Dashboard */
 .dashboard {

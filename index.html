@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Rasheed Rauf">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduHub - Learn Smarter</title>
+  <link rel="icon" href="4366867.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>info@eduhub.com | +2348140814976</span>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" onclick="openModal('loginModal')">Login</a> / 
+        <a href="#" onclick="openModal('registerModal')">Register</a>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Login Modal -->
+<div id="loginModal" class="auth-modal">
+  <div class="auth-form">
+    <span class="close-btn" onclick="closeModal('loginModal')">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="loginEmail" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="loginPassword" required>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <p class="switch-link">No account? <a href="#" onclick="switchToRegister()">Register</a></p>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="auth-modal">
+  <div class="auth-form">
+    <span class="close-btn" onclick="closeModal('registerModal')">&times;</span>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="regName" required>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="regEmail" required>
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="regPassword" required>
+      </div>
+      <button type="submit" class="btn">Register</button>
+      <p class="switch-link">Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>
+    </form>
+  </div>
+</div>
+    
+
+
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="logo">EduHub</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Choose the right path for education</h1>
+      <p>Learn from expert instructors, anytime, anywhere. Join thousands of students growing their skills with EduHub.</p>
+      <div class="hero-buttons">
+        <a href="about.html" class="btn">Read More</a>
+        <a href="courses.html" class="btn primary">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+     
+  <section class="categories container">
+  <h2>Best Platform to Learn Everything</h2>
+  <div class="category-grid">
+    <div class="category-card">
+      <div class="icon">🌍</div>
+      <h3>Language</h3>
+      <p>Master new languages and connect with the world.</p>
+    </div>
+    <div class="category-card">
+      <div class="icon">📈</div>
+      <h3>Business</h3>
+      <p>Learn modern business skills to grow your career.</p>
+    </div>
+    <div class="category-card">
+      <div class="icon">📖</div>
+      <h3>Literature</h3>
+      <p>Dive into classics and explore new writings.</p>
+    </div>
+    <div class="category-card">
+      <div class="icon">💻</div>
+      <h3>Technology</h3>
+      <p>Stay ahead with coding, AI, and digital skills.</p>
+    </div>
+    <div class="category-card">
+      <div class="icon">🔬</div>
+      <h3>Science</h3>
+      <p>Explore biology, chemistry, and physics concepts.</p>
+    </div>
+    <div class="category-card">
+      <div class="icon">🎨</div>
+      <h3>Art & Design</h3>
+      <p>Unleash creativity with art, music, and design.</p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EduHub. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

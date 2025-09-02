@@ -1,9 +1,30 @@
-  
 
+    
 
+document.addEventListener("DOMContentLoaded", () => {
+  const viewAllBtn = document.getElementById("viewAllBtn");
+  const hiddenCourses = document.querySelectorAll(".course-card.hidden");
 
+  let expanded = false;
 
-
+  viewAllBtn.addEventListener("click", () => {
+    if (!expanded) {
+      // Show hidden courses
+      hiddenCourses.forEach(course => {
+        course.classList.remove("hidden");
+      });
+      viewAllBtn.textContent = "Show Less";
+      expanded = true;
+    } else {
+      // Hide again
+      hiddenCourses.forEach(course => {
+        course.classList.add("hidden");
+      });
+      viewAllBtn.textContent = "View All Courses";
+      expanded = false;
+    }
+  });
+});
 
 
 

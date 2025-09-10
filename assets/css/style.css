@@ -144,10 +144,11 @@ nav a.active, nav a:hover {
 
 /* Hero */
 .hero {
-  height: 100vh;
-  background: url(/premium_photo-1664478332732-b38af723c2b7.jpeg) no-repeat center center/cover;
   position: relative;
-  
+  width: 100%;
+  height: 100vh;
+  max-height: 600px;
+  background: url(/premium_photo-1664478332732-b38af723c2b7.jpeg) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,9 +158,12 @@ nav a.active, nav a:hover {
 
 .hero-overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0,0,0,0.5);
+  z-index: 1;
 }
 
 .hero-content {
@@ -438,6 +442,7 @@ nav a.active, nav a:hover {
 /* Contact */
 .contact {
   padding: 3rem 0;
+  height: 100vh;
   text-align: center;
 }
 

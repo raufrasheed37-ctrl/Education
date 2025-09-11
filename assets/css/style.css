@@ -345,7 +345,7 @@ nav a.active, nav a:hover {
   background: #357ab8;
 }
 
-.course-card:hover {
+ .course-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
@@ -485,19 +485,23 @@ nav a.active, nav a:hover {
 
 /* Sidebar */
 .sidebar {
-  width: 250px;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
   background: #2c3e50;
   color: #fff;
   padding: 20px 0;
-  position: fixed;
-  height: 100%;
 }
 
-.sidebar-logo {
+.sidebar-logo a {
+  text-decoration: none;
+  color: inherit;
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  display: block;
 }
 
 .sidebar-menu {
@@ -505,8 +509,13 @@ nav a.active, nav a:hover {
   padding: 0;
 }
 
+#link{
+  color: #f7dc6f;
+}
+
 .sidebar-menu li {
   margin: 20px 0;
+  
 }
 
 .sidebar-menu a {
@@ -528,18 +537,38 @@ nav a.active, nav a:hover {
 
 /* Main Content */
 .dashboard-main {
-  margin-left: 250px;
-  padding: 30px;
   flex: 1;
+  margin-left: 220px;
+  padding: 0;
+}
+
+#st{
+  color: #ddd;
+}
+
+#ts{
+  color: #f7dc6f;
 }
 
 .dashboard-header {
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
+  padding: 40px 50px;
+  background:  #2c3e50;
+  color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .dashboard-header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  margin: 0 0 5px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.dashboard-header p{
+ margin: 0;
+ font-size: 1rem;
 }
 
 /* Stats Section */

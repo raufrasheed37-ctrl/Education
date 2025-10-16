@@ -35,11 +35,11 @@
     <form id="loginForm">
       <div class="form-group">
         <label>Email</label>
-        <input type="email" id="loginEmail" required>
+        <input type="email" id="loginEmail" autocomplete="email" required>
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" id="loginPassword" required>
+        <input type="password" id="loginPassword" autocomplete="current-password" required>
       </div>
       <button type="submit" class="btn">Login</button>
       <p class="switch-link">No account? <a href="#" onclick="switchToRegister()">Register</a></p>
@@ -55,15 +55,15 @@
     <form id="registerForm">
       <div class="form-group">
         <label>Full Name</label>
-        <input type="text" id="regName" required>
+        <input type="text" id="regName" autocomplete="name" required>
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="email" id="regEmail" required>
+        <input type="email" id="regEmail" autocomplete="email" required>
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" id="regPassword" required>
+        <input type="password" id="regPassword" autocomplete="new-password" required>
       </div>
       <button type="submit" class="btn">Register</button>
       <p class="switch-link">Already have an account? <a href="#" onclick="switchToLogin()">Login</a></p>

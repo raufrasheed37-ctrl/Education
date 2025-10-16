@@ -69,3 +69,22 @@ document.getElementById("loginForm")?.addEventListener("submit", function(e) {
     alert("Invalid email or password!");
   }
 });
+
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.getElementById("navMenu");
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+
+     
+     const icon = menuToggle.querySelector("i");
+     if (navMenu.classList.contains("show")) {
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-times");
+    } else {
+      icon.classList.remove("fa-times");
+      icon.classList.add("fa-bars");
+    }
+  });
+}
